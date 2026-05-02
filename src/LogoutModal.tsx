@@ -14,10 +14,10 @@ function LogoutModal({ isOpen, onConfirm, onCancel }: LogoutModalProps) {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-icon warning">⚠️</div>
         
-        <h2 className="modal-title">Confirm Logout</h2>
+        <h2 className="modal-title">Abmeldung bestätigen</h2>
         
         <p className="modal-message">
-          Are you sure you want to logout? All provided information and unsaved data will be lost.
+          Möchten Sie sich wirklich abmelden? Alle eingegebenen Informationen gehen dabei verloren.
         </p>
         
         <div className="modal-actions">
@@ -25,13 +25,13 @@ function LogoutModal({ isOpen, onConfirm, onCancel }: LogoutModalProps) {
             className="btn btn-outline btn-cancel" 
             onClick={onCancel}
           >
-            Cancel
+            Abbruch
           </button>
           <button 
             className="btn btn-danger btn-confirm" 
             onClick={onConfirm}
           >
-            Yes, Logout
+            Ja, abmelden
           </button>
         </div>
       </div>

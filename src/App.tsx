@@ -148,13 +148,13 @@ function App() {
             <img src={logo} alt="ReportMaster" className="header-logo" />
             <div className="header-text">
               <h1 className="app-title">ReportMaster</h1>
-              <p className="app-subtitle">School Report Generation</p>
+              <p className="app-subtitle">Create LimeSurvey Reports</p>
             </div>
           </div>
           <div className="header-right">
             {isAuthEnabled() && (
               <button className="btn btn-outline" onClick={handleLogoutClick}>
-                <span className="icon">🚪</span>
+                <span className="icon">⏻️</span>
                 Logout
               </button>
             )}
@@ -167,13 +167,13 @@ function App() {
         <div className="sidebar">
           <div className="card">
             <div className="card-header">
-              <h3 className="card-title">Configuration</h3>
-              <p className="card-subtitle">Enter school parameters</p>
+              <h3 className="card-title">Konfiguration</h3>
+              <p className="card-subtitle">Schulparameter eingeben</p>
             </div>
             <div className="card-body">
               <div className="form-group">
                 <label htmlFor="snr">
-                  <span className="icon">🏫</span>
+                  <span className="icon">🔢</span>
                   Schulnummer (SNR)
                 </label>
                 <input
@@ -250,12 +250,12 @@ function App() {
                 {state.isLoading ? (
                   <>
                     <span className="spinner-icon">⏳</span>
-                    Loading...
+                    Lade...
                   </>
                 ) : (
                   <>
-                    <span className="icon">📥</span>
-                    Load Data
+                    <span className="icon">⬇️</span>
+                    Daten laden
                   </>
                 )}
               </button>
@@ -355,7 +355,7 @@ function App() {
       </div>
 
       <footer className="footer">
-        Created with <span className="icon red">❤️</span>, React, and TypeScript | By:{' '}
+        Created with <span className="icon red">❤️</span> and React | By:{' '}
         <a
           href="https://edgar-treischl.de"
           target="_blank"
@@ -369,7 +369,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visit GitLab
+          Source Code
         </a>
       </footer>
 

@@ -16,7 +16,7 @@ function AuthPage({ onAuthenticate }: AuthPageProps) {
     e.preventDefault()
     
     if (!apiKey.trim()) {
-      setError('Please enter an API key')
+      setError('Bitte einen gültigen API-Key eingeben.')
       return
     }
 
@@ -45,24 +45,25 @@ function AuthPage({ onAuthenticate }: AuthPageProps) {
             <img src={logo} alt="ReportMaster Logo" />
           </div>
           <h1>ReportMaster</h1>
-          <p className="subtitle">School Report Generation System</p>
+          <p className="subtitle">Berichte für das OES</p>
+          <p className="description">ReportMaster erstellt Umfrageberichte: Die App bietet eine einfache Benutzeroberfläche, um Umfragen auszuwählen, die Daten aus LimeSurvey abzurufen, die Ergebnisse werden visualisiert und in einen PDF-Bericht zusammengefasst.</p>
         </div>
 
         {/* Right Side - Form */}
         <div className="auth-form-container">
           <div className="auth-form-header">
-            <h2>Welcome Back</h2>
-            <p>Enter your API key to access the application</p>
+            <h2>Anmelden</h2>
+                <p>Zum Abbrufen der Daten wird ein API-Key benötigt.</p>
           </div>
 
           <form className="auth-form" onSubmit={handleSubmit}>
             <div className="form-field">
-              <label htmlFor="apiKey">API Key</label>
+              <label htmlFor="apiKey">API-Key</label>
               <input
                 type="password"
                 id="apiKey"
                 className="auth-input"
-                placeholder="Enter your API key"
+                placeholder="API-Key eingeben"
                 value={apiKey}
                 onChange={(e) => {
                   setApiKey(e.target.value)
@@ -88,16 +89,16 @@ function AuthPage({ onAuthenticate }: AuthPageProps) {
               {isLoading ? (
                 <>
                   <span className="spinner-small">⏳</span>
-                  Authenticating...
+                  Authentifizieren...
                 </>
               ) : (
-                'Sign In'
+                'Anmelden'
               )}
             </button>
 
             <div className="auth-footer">
               <p className="help-text">
-                Need an API key? Contact your system administrator.
+               Api-Key? Bitte wenden Sie sich an das Dash-Team, um Zugriff zu erhalten.
               </p>
             </div>
           </form>
@@ -105,7 +106,7 @@ function AuthPage({ onAuthenticate }: AuthPageProps) {
       </div>
 
       <footer className="auth-page-footer">
-        Created with ❤️ by{' '}
+        Created with ❤️ and React | By{' '}
         <a
           href="https://edgar-treischl.de"
           target="_blank"
