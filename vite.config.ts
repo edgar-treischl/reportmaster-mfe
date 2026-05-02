@@ -2,9 +2,11 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import federation from '@originjs/vite-plugin-federation';
 
-export default defineConfig({
-  // IMPORTANT for GitHub Pages deployment
-  base: '/reportmaster-mfe/',
+export default defineConfig(({ mode }) => ({
+  base:
+    mode === 'development'
+      ? 'http://localhost:5174/'   // 👈 absolute URL in dev
+      : '/reportmaster-mfe/',      // 👈 GitHub Pages in prod
 
   plugins: [
     react(),
@@ -14,9 +16,7 @@ export default defineConfig({
       exposes: {
         './ReportmasterApp': './src/App.tsx',
       },
-
-      shared: ['react', 'react-dom']
-
+      shared: ['react', 'react-dom'],
     }),
   ],
 
@@ -36,4 +36,4 @@ export default defineConfig({
     cssCodeSplit: false,
     minify: false,
   },
-});
+}));
