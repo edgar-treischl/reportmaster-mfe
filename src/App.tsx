@@ -13,7 +13,9 @@ import {
 import { isAuthEnabled, getApiKey, setApiKey, clearApiKey } from './config'
 import AuthPage from './AuthPage'
 import LogoutModal from './LogoutModal'
-import logo from './assets/logo.png'
+const logo = new URL('./assets/logo.png', import.meta.url).href
+
+
 
 function App() {
   // Initialize auth state from localStorage on mount
