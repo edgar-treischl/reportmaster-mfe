@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './AuthPage.css'
-const logo = new URL('./assets/logo.png', import.meta.url).href
+import { logo } from './assets';
+
 
 interface AuthPageProps {
   onAuthenticate: (apiKey: string) => void;
