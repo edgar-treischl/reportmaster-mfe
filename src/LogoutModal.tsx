@@ -17,7 +17,7 @@ function LogoutModal({ isOpen, onConfirm, onCancel }: LogoutModalProps) {
         <h2 className="modal-title">Abmeldung bestätigen</h2>
         
         <p className="modal-message">
-          Möchten Sie sich wirklich abmelden? Alle eingegebenen Informationen gehen dabei verloren.
+          Alle eingegebenen Informationen gehen durch die Abmeldung verloren.
         </p>
         
         <div className="modal-actions">

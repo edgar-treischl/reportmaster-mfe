@@ -155,7 +155,7 @@ function App() {
             {isAuthEnabled() && (
               <button className="btn btn-outline" onClick={handleLogoutClick}>
                 <span className="icon">⏻️</span>
-                Logout
+                Abmelden
               </button>
             )}
           </div>
@@ -174,7 +174,7 @@ function App() {
               <div className="form-group">
                 <label htmlFor="snr">
                   <span className="icon">🔢</span>
-                  Schulnummer (SNR)
+                  Schulnummer (SNR):
                 </label>
                 <input
                   type="text"
@@ -188,7 +188,7 @@ function App() {
               <div className="form-group">
                 <label htmlFor="audience">
                   <span className="icon">👥</span>
-                  Befragtengruppe
+                  Befragtengruppe:
                 </label>
                 <select
                   id="audience"
@@ -207,7 +207,7 @@ function App() {
               <div className="form-group">
                 <label htmlFor="ganztag">
                   <span className="icon">⏰</span>
-                  Ganztag
+                  Ganztag:
                 </label>
                 <select
                   id="ganztag"
@@ -226,7 +226,7 @@ function App() {
               <div className="form-group">
                 <label htmlFor="stype">
                   <span className="icon">🎓</span>
-                  Schulart
+                  Schulart:
                 </label>
                 <select
                   id="stype"
@@ -265,7 +265,7 @@ function App() {
                   <div className="divider"></div>
                   <h4 className="section-title">
                     <span className="icon">📊</span>
-                    Select Visualization
+                    Abbildung:
                   </h4>
                   <div className="form-group">
                     <select
@@ -295,11 +295,11 @@ function App() {
                       disabled={state.isGeneratingReport}
                     >
                       <span className="icon">📄</span>
-                      Generate PDF Report
+                      PDF Report generieren
                     </button>
                     <div className="helper-text">
                       <span className="icon">🕐</span>
-                      This may take a moment
+                      Dies kann einen Moment dauern ...
                     </div>
                   </div>
                 </>
@@ -331,7 +331,7 @@ function App() {
         <div className="main-content">
           <div className="card card-main">
             <div className="card-header">
-              <h2 className="school-name">{state.schoolData?.name || 'No data loaded'}</h2>
+              <h2 className="school-name">{state.schoolData?.name || 'Preview Panel'}</h2>
             </div>
             <div className="card-body plot-container">
               {state.schoolData && state.selectedPlot ? (
@@ -339,14 +339,14 @@ function App() {
                   <div className="plot-icon">📈</div>
                   <h3>{state.selectedPlot}</h3>
                   <p className="helper-text">
-                    Visualization will appear here when connected to backend
+                    Visualisierungen werden hier angezeigt. (Noch nicht implementiert)
                   </p>
                 </div>
               ) : (
                 <div className="empty-state">
                   <div className="empty-icon">📊</div>
-                  <h3>No Data Yet</h3>
-                  <p>Click "Load Data" to fetch school information</p>
+                  <h3>Keine Daten verfügbar</h3>
+                  <p>Klicken Sie auf "Daten laden", um Daten abzurufen.</p>
                 </div>
               )}
             </div>
