@@ -220,7 +220,9 @@ function App() {
                   disabled={state.isLoading}
                   title="Beispieldaten laden"
                 >
-                  <span className="icon">📊</span>
+                  <span className="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                  <path fill="#E9570F" d="M9.428 10.286A4.286 4.286 0 0 1 13.714 6v-.857a5.143 5.143 0 0 0-5.143 5.143zm4.286-3a3 3 0 0 0-3 3h-.857a3.857 3.857 0 0 1 3.857-3.857zm0 1.285A1.714 1.714 0 0 0 12 10.286h-.858a2.57 2.57 0 0 1 2.572-2.572zm-3.857 6a4.286 4.286 0 0 1-4.286-4.285h-.857a5.143 5.143 0 0 0 5.143 5.143zm-3-4.285a3 3 0 0 0 3 3v.857A3.857 3.857 0 0 1 6 10.286zm1.285 0A1.714 1.714 0 0 0 9.857 12v.857a2.57 2.57 0 0 1-2.572-2.571zm6-.429a4.286 4.286 0 0 1 4.286 4.286h.857A5.143 5.143 0 0 0 14.142 9zm3 4.286a3 3 0 0 0-3-3v-.857A3.86 3.86 0 0 1 18 14.143zm-1.285 0a1.714 1.714 0 0 0-1.715-1.715v-.857a2.57 2.57 0 0 1 2.572 2.572zm-4.286 0a1.714 1.714 0 0 1-1.714 1.714v.857a2.57 2.57 0 0 0 2.571-2.571zm1.286 0a3 3 0 0 1-3 3V18a3.857 3.857 0 0 0 3.857-3.857zm-3 4.285a4.286 4.286 0 0 0 4.285-4.285H15a5.143 5.143 0 0 1-5.143 5.143z"/></svg>
+                  </span>
                    <p className="card-subtitle">Beispieldaten</p>
                 </button>
               </div>
@@ -228,8 +230,7 @@ function App() {
             <div className="card-body">
               <div className="form-group">
                 <label htmlFor="snr">
-                  <span className="icon">🔢</span>
-                  Schulnummer (SNR):
+                   Schulnummer (SNR):
                 </label>
                 <input
                   type="text"
@@ -242,7 +243,7 @@ function App() {
 
               <div className="form-group">
                 <label htmlFor="audience">
-                  <span className="icon">👥</span>
+                  <span className="icon"></span>
                   Befragtengruppe:
                 </label>
                 <select
@@ -261,7 +262,7 @@ function App() {
 
               <div className="form-group">
                 <label htmlFor="ganztag">
-                  <span className="icon">⏰</span>
+                  <span className="icon"></span>
                   Ganztag:
                 </label>
                 <select
@@ -280,7 +281,7 @@ function App() {
 
               <div className="form-group">
                 <label htmlFor="stype">
-                  <span className="icon">🎓</span>
+                  <span className="icon"></span>
                   Schulart:
                 </label>
                 <select
@@ -309,7 +310,7 @@ function App() {
                   </>
                 ) : (
                   <>
-                    <span className="icon">⬇️</span>
+                    <span className="icon">⬇</span>
                     Daten laden
                   </>
                 )}
@@ -319,7 +320,10 @@ function App() {
                 <>
                   <div className="divider"></div>
                   <h4 className="section-title">
-                    <span className="icon">📊</span>
+                    <span className="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                      <path fill="none" stroke="currentColor" d="M22.5 18.5h-.304c-.94 0-1.877-.274-2.564-.917a10.931 10.931 0 0 1-2.061-2.624l-.82-1.459h-.5l-.822 1.459a10.922 10.922 0 0 1-1.75 2.32a4.604 4.604 0 0 1-1.919-1.062a15.292 15.292 0 0 1-2.868-3.674L7.75 10.5h-.498l-1.141 2.043a15.3 15.3 0 0 1-3.286 4.053a3.54 3.54 0 0 1-1.325.722m0 5.182v-21h21v21h-21Zm15-13a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg>
+                    </span>
                     Abbildung:
                   </h4>
                   <div className="plot-list">
