@@ -7,52 +7,56 @@
 
 .chart-controls {
   display: flex;
-  justify-content: flex-end;
-  padding: 0 0 8px 0;
+  justify-content: center;
+  padding: 12px 0 0 0;
 }
 
 .btn-download {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
-  background: #3498db;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  font-weight: 500;
+  padding: 6px 14px;
+  color: #5a6c7d;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 400;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .btn-download:hover {
-  background: #2980b9;
+  background: #e9ecef;
+  border-color: #adb5bd;
+  color: #2c3e50;
 }
 
 .btn-download:active {
   transform: translateY(1px);
+  background: #dee2e6;
 }
 
 .btn-download .icon {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
+
 
 .stacked-bar-chart {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   background: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .chart-headers {
   text-align: left;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -73,14 +77,14 @@
 .chart-bars {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .chart-row {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  margin-bottom: 10px;
+  gap: 3px;
+  margin-bottom: 6px;
 }
 
 .chart-label {
@@ -91,7 +95,7 @@
   color: #2c3e50;
   display: flex;
   flex-direction: column;
-  padding: 0 0 2px 0;
+  padding: 0;
 }
 
 .label-line {
@@ -151,8 +155,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 0 0 0;
-  margin-top: 6px;
+  padding: 8px 0 0 0;
+  margin-top: 4px;
   border-top: 1px solid #e9ecef;
   flex-wrap: wrap;
 }

@@ -151,7 +151,7 @@ function App() {
         ...prev,
         isLoading: false,
         schoolData: {
-          name: 'Example Survey Data',
+          name: 'Beispiel OES Daten',
           plots,
           plotData: plotDataMap,
         },
@@ -221,6 +221,7 @@ function App() {
                   title="Beispieldaten laden"
                 >
                   <span className="icon">📊</span>
+                   <p className="card-subtitle">Beispieldaten</p>
                 </button>
               </div>
             </div>

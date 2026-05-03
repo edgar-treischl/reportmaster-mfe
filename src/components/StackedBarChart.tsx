@@ -46,25 +46,23 @@ export function StackedBarChart({
     }
   }
 
-  // Extract unique categories from all data for legend
+  // Extract unique categories from all data for legend and sort by meta_sets sort field
   const allCategories = new Set<string>()
   groups.forEach(group => {
     group.data.forEach(item => allCategories.add(item.category))
   })
 
+  // Sort categories based on metaSets sort field
+  const sortedCategories = Array.from(allCategories).sort((a, b) => {
+    const metaA = metaSets.find(m => m.labels === a)
+    const metaB = metaSets.find(m => m.labels === b)
+    const sortA = metaA?.sort ? parseInt(metaA.sort, 10) : 999
+    const sortB = metaB?.sort ? parseInt(metaB.sort, 10) : 999
+    return sortA - sortB
+  })
+
   return (
     <div className="chart-wrapper">
-      <div className="chart-controls">
-        <button 
-          className="btn-download" 
-          onClick={handleDownloadPNG}
-          title="Als PNG herunterladen"
-        >
-          <span className="icon">💾</span>
-          PNG herunterladen
-        </button>
-      </div>
-
       <div ref={chartRef} className="stacked-bar-chart">
         <div className="chart-headers">
           <h2 className="chart-header1">{header1}</h2>
@@ -73,9 +71,18 @@ export function StackedBarChart({
 
         <div className="chart-bars">
           {groups.map((group, groupIdx) => {
+            // Sort data by metaSets sort field
+            const sortedData = [...group.data].sort((a, b) => {
+              const metaA = metaSets.find(m => m.labels === a.category)
+              const metaB = metaSets.find(m => m.labels === b.category)
+              const sortA = metaA?.sort ? parseInt(metaA.sort, 10) : 999
+              const sortB = metaB?.sort ? parseInt(metaB.sort, 10) : 999
+              return sortA - sortB
+            })
+
             // Calculate cumulative percentages for positioning
             let cumulative = 0
-            const bars = group.data.map((item) => {
+            const bars = sortedData.map((item) => {
               const bar = {
                 category: item.category,
                 percentage: item.percentage,
@@ -143,10 +150,10 @@ export function StackedBarChart({
           })}
         </div>
 
-        {showLegend && allCategories.size > 0 && (
+        {showLegend && sortedCategories.length > 0 && (
           <div className="chart-legend">
             <div className="legend-items">
-              {Array.from(allCategories).map((category) => {
+              {sortedCategories.map((category) => {
                 const colors = getColorMapping(metaSets, category)
                 return (
                   <div key={category} className="legend-item">
@@ -161,6 +168,17 @@ export function StackedBarChart({
             </div>
           </div>
         )}
+      </div>
+
+      <div className="chart-controls">
+        <button 
+          className="btn-download" 
+          onClick={handleDownloadPNG}
+          title="Als PNG herunterladen"
+        >
+          <span className="icon">💾</span>
+          Abbildung herunterladen
+        </button>
       </div>
     </div>
   )

@@ -36,7 +36,7 @@ export function formatPercentage(value: number): string {
 }
 
 // Text wrapping utility (similar to R's str_wrap)
-export function wrapText(text: string, width: number = 45): string {
+export function wrapText(text: string, width: number = 120): string {
   const words = text.split(' ')
   const lines: string[] = []
   let currentLine = ''
@@ -56,7 +56,7 @@ export function wrapText(text: string, width: number = 45): string {
 
 // Format label with bold variable code
 export function formatLabelWithCode(varCode: string, labelShort: string): string {
-  const wrapped = wrapText(`${varCode}: ${labelShort}`, 45)
+  const wrapped = wrapText(`${varCode}: ${labelShort}`, 120)
   return wrapped
 }
 
