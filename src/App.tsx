@@ -209,8 +209,20 @@ function App() {
         <div className="sidebar">
           <div className="card">
             <div className="card-header">
-              <h3 className="card-title">Konfiguration</h3>
-              <p className="card-subtitle">Schulparameter eingeben</p>
+              <div className="card-header-content">
+                <div>
+                  <h3 className="card-title">Konfiguration</h3>
+                  <p className="card-subtitle">Schulparameter eingeben</p>
+                </div>
+                <button
+                  className="btn-icon-header"
+                  onClick={handleLoadExampleData}
+                  disabled={state.isLoading}
+                  title="Beispieldaten laden"
+                >
+                  <span className="icon">📊</span>
+                </button>
+              </div>
             </div>
             <div className="card-body">
               <div className="form-group">
@@ -302,16 +314,6 @@ function App() {
                 )}
               </button>
 
-              <button
-                className="btn btn-outline btn-block"
-                onClick={handleLoadExampleData}
-                disabled={state.isLoading}
-                style={{ marginTop: '8px' }}
-              >
-                <span className="icon">📊</span>
-                Beispieldaten laden
-              </button>
-
               {state.schoolData && (
                 <>
                   <div className="divider"></div>
@@ -319,20 +321,27 @@ function App() {
                     <span className="icon">📊</span>
                     Abbildung:
                   </h4>
-                  <div className="form-group">
-                    <select
-                      className="form-control"
-                      value={state.selectedPlot || ''}
-                      onChange={(e) =>
-                        setState((prev) => ({ ...prev, selectedPlot: e.target.value }))
-                      }
-                    >
-                      {state.schoolData.plots.map((plot) => (
-                        <option key={plot.id} value={plot.id}>
-                          {plot.label}
-                        </option>
-                      ))}
-                    </select>
+                  <div className="plot-list">
+                    {state.schoolData.plots.map((plot) => {
+                      const isSelected = state.selectedPlot === plot.id
+                      // Extract plot code (e.g., "A11", "B12") from the label
+                      const plotCodeMatch = plot.label.match(/^([A-Z]\d+[a-z]?)/)
+                      const plotCode = plotCodeMatch ? plotCodeMatch[1] : plot.id
+                      const plotDescription = plot.label.replace(/^[A-Z]\d+[a-z]?:\s*/, '')
+                      
+                      return (
+                        <div
+                          key={plot.id}
+                          className={`plot-item ${isSelected ? 'selected' : ''}`}
+                          onClick={() =>
+                            setState((prev) => ({ ...prev, selectedPlot: plot.id }))
+                          }
+                        >
+                          <span className="plot-code">{plotCode}</span>
+                          <span className="plot-description">{plotDescription}</span>
+                        </div>
+                      )
+                    })}
                   </div>
                 </>
               )}
