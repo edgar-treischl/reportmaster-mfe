@@ -46,20 +46,16 @@ export function StackedBarChart({
     }
   }
 
-  // Extract unique categories from all data for legend and sort by meta_sets sort field
-  const allCategories = new Set<string>()
-  groups.forEach(group => {
-    group.data.forEach(item => allCategories.add(item.category))
-  })
-
+  // Use ALL categories from metaSets (not just those in data) for legend
   // Sort categories based on metaSets sort field
-  const sortedCategories = Array.from(allCategories).sort((a, b) => {
-    const metaA = metaSets.find(m => m.labels === a)
-    const metaB = metaSets.find(m => m.labels === b)
-    const sortA = metaA?.sort ? parseInt(metaA.sort, 10) : 999
-    const sortB = metaB?.sort ? parseInt(metaB.sort, 10) : 999
-    return sortA - sortB
-  })
+  const sortedCategories = metaSets
+    .filter(m => m.labels) // Ensure labels exist
+    .sort((a, b) => {
+      const sortA = a.sort ? parseInt(a.sort, 10) : 999
+      const sortB = b.sort ? parseInt(b.sort, 10) : 999
+      return sortA - sortB
+    })
+    .map(m => m.labels)
 
   return (
     <div className="chart-wrapper">
