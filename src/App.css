@@ -375,13 +375,14 @@ body {
 }
 
 .plot-container {
-  min-height: 600px;
+  min-height: 400px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: #fafafa;
   border-radius: 0.75rem;
   border: 2px dashed #e0e0e0;
+  padding: 0.75rem;
 }
 
 .plot-placeholder {
@@ -500,4 +501,31 @@ body {
   .card-body {
     padding: 1rem;
   }
+}
+
+/* Plot Content */
+.plot-content {
+  padding: 0;
+  overflow-x: auto;
+}
+
+.plot-header {
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 1rem;
+}
+
+.plot-header1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.plot-header2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #5a6c7d;
+  margin: 0;
 }

@@ -4,6 +4,7 @@ import type {
   FormData,
   AppState,
   AuthState,
+  ExampleDataItem,
 } from './types'
 import {
   AUDIENCE_OPTIONS,
@@ -13,7 +14,13 @@ import {
 import { isAuthEnabled, getApiKey, setApiKey, clearApiKey } from './config'
 import AuthPage from './AuthPage'
 import LogoutModal from './LogoutModal'
-import { logo } from './assets';
+import { logo } from './assets'
+import { StackedBarChart } from './components/StackedBarChart'
+import { processExampleData, getAvailablePlots } from './dataProcessor'
+import type { MetaHeader, MetaSet } from './iqb'
+import exampleDataJson from './data/example_data.json'
+import metaHeadersJson from './data/meta_headers.json'
+import metaSetsJson from './data/meta_sets.json'
 
 function App() {
   // Initialize auth state from localStorage on mount
@@ -116,6 +123,41 @@ function App() {
         selectedPlot: 'plot1',
       }))
     }, 1000)
+  }
+
+  const handleLoadExampleData = () => {
+    setState((prev) => ({ ...prev, isLoading: true }))
+    
+    setTimeout(() => {
+      // Load metadata
+      const exampleData = exampleDataJson as ExampleDataItem[]
+      const metaHeaders = metaHeadersJson as MetaHeader[]
+      const metaSets = metaSetsJson as MetaSet[]
+      
+      // Process the example data with metadata
+      const plotDataMap = processExampleData(exampleData, metaHeaders, metaSets)
+      const availablePlots = getAvailablePlots(exampleData)
+      
+      // Create plot metadata with headers
+      const plots = availablePlots.map((plotName) => {
+        const plotData = plotDataMap.get(plotName)
+        return {
+          id: plotName,
+          label: plotData?.header2 || `Plot ${plotName}`,
+        }
+      })
+
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        schoolData: {
+          name: 'Example Survey Data',
+          plots,
+          plotData: plotDataMap,
+        },
+        selectedPlot: availablePlots[0] || null,
+      }))
+    }, 500)
   }
 
   const handleGenerateReport = () => {
@@ -260,6 +302,16 @@ function App() {
                 )}
               </button>
 
+              <button
+                className="btn btn-outline btn-block"
+                onClick={handleLoadExampleData}
+                disabled={state.isLoading}
+                style={{ marginTop: '8px' }}
+              >
+                <span className="icon">📊</span>
+                Beispieldaten laden
+              </button>
+
               {state.schoolData && (
                 <>
                   <div className="divider"></div>
@@ -335,18 +387,40 @@ function App() {
             </div>
             <div className="card-body plot-container">
               {state.schoolData && state.selectedPlot ? (
-                <div className="plot-placeholder">
-                  <div className="plot-icon">📈</div>
-                  <h3>{state.selectedPlot}</h3>
-                  <p className="helper-text">
-                    Visualisierungen werden hier angezeigt. (Noch nicht implementiert)
-                  </p>
-                </div>
+                state.schoolData.plotData ? (
+                  <div className="plot-content">
+                    {(() => {
+                      const plotData = state.schoolData.plotData.get(state.selectedPlot)
+                      if (!plotData) return null
+                      
+                      const metaSets = metaSetsJson as MetaSet[]
+                      
+                      return (
+                        <StackedBarChart
+                          groups={plotData.groups}
+                          metaSets={metaSets.filter(m => m.set === plotData.set)}
+                          plotName={state.selectedPlot}
+                          header1={plotData.header1}
+                          header2={plotData.header2}
+                          showLegend={true}
+                        />
+                      )
+                    })()}
+                  </div>
+                ) : (
+                  <div className="plot-placeholder">
+                    <div className="plot-icon">📈</div>
+                    <h3>{state.selectedPlot}</h3>
+                    <p className="helper-text">
+                      Visualisierungen werden hier angezeigt. (Noch nicht implementiert)
+                    </p>
+                  </div>
+                )
               ) : (
                 <div className="empty-state">
                   <div className="empty-icon">📊</div>
                   <h3>Keine Daten verfügbar</h3>
-                  <p>Klicken Sie auf "Daten laden", um Daten abzurufen.</p>
+                  <p>Klicken Sie auf "Daten laden" oder "Beispieldaten laden".</p>
                 </div>
               )}
             </div>

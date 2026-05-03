@@ -1,0 +1,685 @@
+[
+  {
+    "sort": 1,
+    "plot": "A11",
+    "header1": "A1 Klassenführung",
+    "header2": "A1.1 Der Unterricht wird durch Störungen nicht beeinträchtigt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 2,
+    "plot": "A12",
+    "header1": "A1 Klassenführung",
+    "header2": "A1.2 Die Lernzeit wird effizient genutzt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 3,
+    "plot": "A13",
+    "header1": "A1 Klassenführung",
+    "header2": "A1.3 Das Unterrichtsklima ist lernförderlich.",
+    "report": "Survey"
+  },
+  {
+    "sort": 4,
+    "plot": "A21",
+    "header1": "A2 Nachvollziehbarkeit des Lernangebots",
+    "header2": "A2.1 Der Unterricht basiert auf Zielen und zu erwerbenden Kompetenzen.",
+    "report": "Survey"
+  },
+  {
+    "sort": 5,
+    "plot": "A22",
+    "header1": "A2 Nachvollziehbarkeit des Lernangebots",
+    "header2": "A2.2 Die Inhalte des Unterrichts werden klar und anschaulich dargestellt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 6,
+    "plot": "A32",
+    "header1": "A3 Variation der Lehr- und Lernmethoden",
+    "header2": "A3.2 Die Variation der Lehr- und Lernmethoden ist motivierend.",
+    "report": "Survey"
+  },
+  {
+    "sort": 7,
+    "plot": "A41",
+    "header1": "A4  Schülerorientierung",
+    "header2": "A4.1 Beiträge der Schülerinnen und Schüler werden in den Unterricht einbezogen.",
+    "report": "Survey"
+  },
+  {
+    "sort": 8,
+    "plot": "A42",
+    "header1": "A4 Schülerorientierung",
+    "header2": "A4.2 Alltags- und Anwendungsbezug sind Elemente des Unterrichts.",
+    "report": "Survey"
+  },
+  {
+    "sort": 9,
+    "plot": "A43",
+    "header1": "A4 Schülerorientierung",
+    "header2": "A4.3 Der Unterricht ermöglicht das Erleben eigener Kompetenz.",
+    "report": "Survey"
+  },
+  {
+    "sort": 10,
+    "plot": "A51",
+    "header1": "A5 Berücksichtigung unterschiedlicher Lernvoraussetzungen",
+    "header2": "A5.1 Der individuelle Lernstand wird erfasst und im Unterricht berücksichtigt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 11,
+    "plot": "A52",
+    "header1": "A5 Berücksichtigung unterschiedlicher Lernvoraussetzungen",
+    "header2": "A5.2 Rückmeldungen und Unterstützungsangebote fördern den individuellen Lernprozess.",
+    "report": "Survey"
+  },
+  {
+    "sort": 12,
+    "plot": "A53",
+    "header1": "A5 Berücksichtigung unterschiedlicher Lernvoraussetzungen",
+    "header2": "A5.3 Der Unterricht bietet Möglichkeiten der Selbstbestimmung und Selbstorganisation des Lernprozesses.",
+    "report": "Survey"
+  },
+  {
+    "sort": 13,
+    "plot": "A61",
+    "header1": "A6  Nachhaltiges Lernen",
+    "header2": "A6.1 Im Unterricht wird Wissen vernetzt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 14,
+    "plot": "A63",
+    "header1": "A6  Nachhaltiges Lernen",
+    "header2": "A6.3 Lernstrategien werden im Unterricht vermittelt und angewandt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 15,
+    "plot": "A63b",
+    "header1": "A6  Nachhaltiges Lernen",
+    "header2": "A6.3 Lernstrategien werden im Unterricht vermittelt und angewandt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 16,
+    "plot": "A64",
+    "header1": "A6  Nachhaltiges Lernen",
+    "header2": "A6.4 Der Unterricht enthält Übungsphasen und sichert die Ergebnisse.",
+    "report": "Survey"
+  },
+  {
+    "sort": 17,
+    "plot": "B11",
+    "header1": "B1 Demokratieerziehung, Achtung und Rücksicht",
+    "header2": "B1.1 Formen der Mitbestimmung und Verantwortungsübernahme werden an der Schule praktiziert.",
+    "report": "Survey"
+  },
+  {
+    "sort": 18,
+    "plot": "B12",
+    "header1": "B1 Demokratieerziehung, Achtung und Rücksicht",
+    "header2": "B1.2 Die Individualität aller wird anerkannt und wertgeschätzt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 19,
+    "plot": "B13",
+    "header1": "B1 Demokratieerziehung, Achtung und Rücksicht",
+    "header2": "B1.3 Es herrscht ein positives Schulklima.",
+    "report": "Survey"
+  },
+  {
+    "sort": 20,
+    "plot": "B13b",
+    "header1": "B1 Demokratieerziehung, Achtung und Rücksicht",
+    "header2": "B1.3 Es herrscht ein positives Schulklima.",
+    "report": "Survey"
+  },
+  {
+    "sort": 21,
+    "plot": "B21",
+    "header1": "B2  Interessenförderung",
+    "header2": "B2.1 Die Schule fördert individuelle Interessen und Fähigkeiten der Schülerinnen und Schüler.",
+    "report": "Survey"
+  },
+  {
+    "sort": 22,
+    "plot": "B22",
+    "header1": "B2  Interessenförderung",
+    "header2": "B2. 2 Die Schule fördert die Auseinandersetzung mit unterschiedlichen Lebensbereichen.",
+    "report": "Survey"
+  },
+  {
+    "sort": 23,
+    "plot": "B31",
+    "header1": "B3 Prävention",
+    "header2": "B3.1 Die Schule legt Wert auf eine gesunde Lebensführung und Umweltbewusstsein.",
+    "report": "Survey"
+  },
+  {
+    "sort": 24,
+    "plot": "B32",
+    "header1": "B3 Prävention",
+    "header2": "B3.2 Die Schule fördert die selbstbestimmte Teilhabe der Schülerinnen und Schüler an der digitalen Gesellschaft.",
+    "report": "Survey"
+  },
+  {
+    "sort": 25,
+    "plot": "B33",
+    "header1": "B3 Prävention",
+    "header2": "B3.3 Die Schule fördert den konstruktiven Umgang mit Konflikten.",
+    "report": "Survey"
+  },
+  {
+    "sort": 26,
+    "plot": "C11",
+    "header1": "C1 Organisation der Schule",
+    "header2": "C1.1 Die Schulleitung nimmt ihre Leitungsfunktion nach innen und außen sichtbar wahr.",
+    "report": "Survey"
+  },
+  {
+    "sort": 27,
+    "plot": "C12",
+    "header1": "C1 Organisation der Schule",
+    "header2": "C1.2 Die Schulleitung regelt Zuständigkeiten und Abläufe verbindlich.",
+    "report": "Survey"
+  },
+  {
+    "sort": 28,
+    "plot": "C13",
+    "header1": "C1 Organisation der Schule",
+    "header2": "C1.3 Die Schulleitung sorgt für ein geregeltes Wissensmanagement.",
+    "report": "Survey"
+  },
+  {
+    "sort": 29,
+    "plot": "C21",
+    "header1": "C2 Personalführung",
+    "header2": "C2.1 Die Schulleitung unterstützt Mitarbeiterinnen und Mitarbeiter in ihrer beruflichen Weiterentwicklung.",
+    "report": "Survey"
+  },
+  {
+    "sort": 30,
+    "plot": "C22",
+    "header1": "C2 Personalführung",
+    "header2": "C2.2 Die Schulleitung fördert die Motivation der Mitarbeiterinnen und Mitarbeiter.",
+    "report": "Survey"
+  },
+  {
+    "sort": 31,
+    "plot": "C23",
+    "header1": "C2 Personalführung",
+    "header2": "C2.3 Die Schulleitung etabliert Verfahren zur Prävention und Lösung von Konflikten.",
+    "report": "Survey"
+  },
+  {
+    "sort": 32,
+    "plot": "C31",
+    "header1": "C3 Qualitätsmanagement",
+    "header2": "C3.1 Die Schulleitung verantwortet die Schul- und Unterrichtsentwicklung als zentrale Führungsaufgabe.",
+    "report": "Survey"
+  },
+  {
+    "sort": 33,
+    "plot": "C33",
+    "header1": "C3 Qualitätsmanagement",
+    "header2": "C3.3 Die Schulgemeinschaft wird an der Qualitätsentwicklung beteiligt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 34,
+    "plot": "C34",
+    "header1": "C3 Qualitätsmanagement",
+    "header2": "C3.4 Die Schulleitung nutzt Monitoring-Information für die Qualitätsentwicklung.",
+    "report": "Survey"
+  },
+  {
+    "sort": 35,
+    "plot": "D11",
+    "header1": "D1 Kooperative Unterrichtsentwicklung",
+    "header2": "D1.1 Das Kollegium entwickelt  den Unterricht unter Berücksichtigung der Kompetenzorientierung zielgerichtet weiter.",
+    "report": "Survey"
+  },
+  {
+    "sort": 36,
+    "plot": "D12",
+    "header1": "D1 Kooperative Unterrichtsentwicklung",
+    "header2": "D1.2 Die Maßnahmen zur Unterrichtsentwicklung werden in kollegialer Kooperation umgesetzt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 37,
+    "plot": "D13",
+    "header1": "D1 Kooperative Unterrichtsentwicklung",
+    "header2": "D1.3 Die Wirkungen der Unterrichtsentwicklung werden mit Blick auf die Weiterarbeit reflektiert.",
+    "report": "Survey"
+  },
+  {
+    "sort": 38,
+    "plot": "D21",
+    "header1": "D2 Individuelle und schulische Weiterentwicklung",
+    "header2": "D2.1 Das Kollegium übernimmt Mitverantwortung für die Schulentwicklung.",
+    "report": "Survey"
+  },
+  {
+    "sort": 39,
+    "plot": "D22",
+    "header1": "D2 Individuelle und schulische Weiterentwicklung",
+    "header2": "D2.2 Das Kollegium entwickelt sich beruflich weiter.",
+    "report": "Survey"
+  },
+  {
+    "sort": 40,
+    "plot": "D23",
+    "header1": "D2 Individuelle und schulische Weiterentwicklung",
+    "header2": "D2.3 Die Fortbildungsaktivitäten werden auf Schul- und Unterrichtsebene wirksam.",
+    "report": "Survey"
+  },
+  {
+    "sort": 41,
+    "plot": "D31",
+    "header1": "D3 Zusammenarbeit mit Eltern und Kooperationspartnern",
+    "header2": "D3.1 Die Schule legt Wert auf eine gute Kooperation mit Eltern und Kooperationspartnern.",
+    "report": "Survey"
+  },
+  {
+    "sort": 42,
+    "plot": "D32",
+    "header1": "D3 Zusammenarbeit mit Eltern und Kooperationspartnern",
+    "header2": "D3.2 Die pädagogische Arbeit ist mit dem weiteren Personal an der Schule  und den Kooperationspartnern abgestimmt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 43,
+    "plot": "D33",
+    "header1": "D3 Zusammenarbeit mit Eltern und Kooperationspartnern",
+    "header2": "D3.3 Die Schule pflegt Kontakte mit anderen Bildungseinrichtungen und dem nachbarschaftlichen Umfeld.",
+    "report": "Survey"
+  },
+  {
+    "sort": 44,
+    "plot": "W11",
+    "header1": "W1 Heterogenität",
+    "header2": "W1.1 Für den Umgang mit Heterogenität bestehen an der Schule zentrale Festlegungen.",
+    "report": "Survey"
+  },
+  {
+    "sort": 45,
+    "plot": "W12",
+    "header1": "W1 Heterogenität",
+    "header2": "W1.2 Heterogenität wird als Teil der Schulkultur wertgeschätzt und ist im Schulalltag erkennbar.",
+    "report": "Survey"
+  },
+  {
+    "sort": 46,
+    "plot": "W13",
+    "header1": "W1 Heterogenität",
+    "header2": "W1.3 Die individuellen Bedürfnisse, Stärken und Schwächen der Schülerinnen und Schüler werden festgestellt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 47,
+    "plot": "W14",
+    "header1": "W1 Heterogenität",
+    "header2": "W1.4 Das pädagogische Handeln im Unterricht berücksichtigt die Heterogenität der Schülerinnen und Schüler.",
+    "report": "Survey"
+  },
+  {
+    "sort": 48,
+    "plot": "W15",
+    "header1": "W1 Heterogenität",
+    "header2": "W1.5 Hinsichtlich der individuellen Förderung wird mit den Eltern bzw. Ausbildungspartnern und den Kooperationspartnern zusammengearbeitet.",
+    "report": "Survey"
+  },
+  {
+    "sort": 49,
+    "plot": "W2leh",
+    "header1": "W2 Digitalisierung",
+    "header2": "Nutzung digitaler Geräte - Lehrkräfte",
+    "report": "Survey"
+  },
+  {
+    "sort": 50,
+    "plot": "W2sus",
+    "header1": "W2 Digitalisierung",
+    "header2": "Nutzung digitaler Geräte - Schülerinnen und Schüler",
+    "report": "Survey"
+  },
+  {
+    "sort": 51,
+    "plot": "W21",
+    "header1": "W2 Digitalisierung",
+    "header2": "W2.1 Die Schulleitung verantwortet die Konzeption und Umsetzung der digitalen Bildung an der Schule.",
+    "report": "Survey"
+  },
+  {
+    "sort": 52,
+    "plot": "W22",
+    "header1": "W2 Digitalisierung",
+    "header2": "W2.2 Die Schulleitung befördert ein digital gestütztes Schulmanagement.",
+    "report": "Survey"
+  },
+  {
+    "sort": 53,
+    "plot": "W23",
+    "header1": "W2 Digitalisierung",
+    "header2": "W2.3 Das Kollegium nutzt die Potenziale der Digitalisierung in Unterricht und Schule.",
+    "report": "Survey"
+  },
+  {
+    "sort": 54,
+    "plot": "W24",
+    "header1": "W2 Digitalisierung",
+    "header2": "W2.4 Zur Gestaltung eines kompetenzorientierten Unterrichts werden digitale Medien eingebunden.",
+    "report": "Survey"
+  },
+  {
+    "sort": 55,
+    "plot": "W25",
+    "header1": "W2 Digitalisierung",
+    "header2": "W2.5 Digitale Medien unterstützen die individuelle Förderung und Selbststeuerung der Schülerinnen und Schüler.",
+    "report": "Survey"
+  },
+  {
+    "sort": 56,
+    "plot": "W26",
+    "header1": "W2 Digitalisierung",
+    "header2": "W2.6 Die Schule fördert die selbstbestimmte Teilhabe der Schülerinnen und Schüler an der digitalen Gesellschaft.",
+    "report": "Survey"
+  },
+  {
+    "sort": 57,
+    "plot": "W32",
+    "header1": "W3 Offener Ganztag",
+    "header2": "W3.2 Das Ganztagsangebot wird als multiprofessionelle Kooperation zur gezielten Förderung der SuS umgesetzt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 58,
+    "plot": "W33",
+    "header1": "W3 Offener Ganztag",
+    "header2": "W3.3 Durch die Gestaltung guter Rahmenbedingungen wird der Ganztag als Lebensraum gestärkt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 59,
+    "plot": "W33b",
+    "header1": "W3 Offener Ganztag",
+    "header2": "W3.3 Durch die Gestaltung guter Rahmenbedingungen wird der Ganztag als Lebensraum gestärkt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 60,
+    "plot": "W33c",
+    "header1": "W3 Offener Ganztag",
+    "header2": "W3.3 Durch die Gestaltung guter Rahmenbedingungen wird der Ganztag als Lebensraum gestärkt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 61,
+    "plot": "W33d",
+    "header1": "W3 Offener Ganztag",
+    "header2": "W3.3 Durch die Gestaltung guter Rahmenbedingungen wird der Ganztag als Lebensraum gestärkt.",
+    "report": "Survey"
+  },
+  {
+    "sort": 62,
+    "plot": "W34",
+    "header1": "W3 Offener Ganztag",
+    "header2": "W3.4 Das Ganztagsangebot fördert das formale und non-formale Lernen der SuS.",
+    "report": "Survey"
+  },
+  {
+    "sort": 63,
+    "plot": "W34b",
+    "header1": "W3 Offener Ganztag",
+    "header2": "W3.4 Das Ganztagsangebot fördert das formale und non-formale Lernen der SuS.",
+    "report": "Survey"
+  },
+  {
+    "sort": 64,
+    "plot": "W3Z",
+    "header1": "W3 Offener Ganztag",
+    "header2": "Zufriedenheit der Eltern",
+    "report": "Survey"
+  },
+  {
+    "sort": 65,
+    "plot": "ZA",
+    "header1": "Zufriedenheit",
+    "header2": "Ausbildungspartner",
+    "report": "Survey"
+  },
+  {
+    "sort": 66,
+    "plot": "ZE",
+    "header1": "Zufriedenheit",
+    "header2": "Eltern",
+    "report": "Survey"
+  },
+  {
+    "sort": 67,
+    "plot": "ZL",
+    "header1": "Zufriedenheit",
+    "header2": "Lehrkräfte",
+    "report": "Survey"
+  },
+  {
+    "sort": 68,
+    "plot": "ZS",
+    "header1": "Zufriedenheit",
+    "header2": "Schülerinnen und Schüler",
+    "report": "Survey"
+  },
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {
+    "sort": 1,
+    "plot": "Zeit",
+    "header1": "Zeit",
+    "report": "UBB"
+  },
+  {
+    "sort": 2,
+    "plot": "A1",
+    "header1": "A1 Klassenführung",
+    "report": "UBB"
+  },
+  {
+    "sort": 3,
+    "plot": "A1a",
+    "header1": "A1.1 Der Unterricht wird durch Störungen nicht beeinträchtigt.",
+    "report": "UBB"
+  },
+  {
+    "sort": 4,
+    "plot": "A1b",
+    "header1": "A1.2 Die Lernzeit wird effizient genutzt.",
+    "report": "UBB"
+  },
+  {
+    "sort": 5,
+    "plot": "A1c",
+    "header1": "A1.3 Das Unterrichtsklima ist lernförderlich.",
+    "report": "UBB"
+  },
+  {
+    "sort": 6,
+    "plot": "A2",
+    "header1": "A2 Nachvollziehbarkeit des Lernangebots",
+    "report": "UBB"
+  },
+  {
+    "sort": 7,
+    "plot": "A2a",
+    "header1": "A2.1 Der Unterricht basiert auf Zielen und zu erwerbenden Kompetenzen.",
+    "report": "UBB"
+  },
+  {
+    "sort": 8,
+    "plot": "A2b",
+    "header1": "A2.2 Die Inhalte des Unterrichts werden klar und anschaulich dargestellt.",
+    "report": "UBB"
+  },
+  {
+    "sort": 9,
+    "plot": "A4",
+    "header1": "A4  Schülerorientierung",
+    "report": "UBB"
+  },
+  {
+    "sort": 10,
+    "plot": "A4a",
+    "header1": "A4.1 Beiträge der Schülerinnen und Schüler werden in den Unterricht einbezogen.",
+    "report": "UBB"
+  },
+  {
+    "sort": 11,
+    "plot": "A4b",
+    "header1": "A4.2 Alltags- und Anwendungsbezug sind Elemente des Unterrichts.",
+    "report": "UBB"
+  },
+  {
+    "sort": 12,
+    "plot": "A4c",
+    "header1": "A4.3 Der Unterricht ermöglicht das Erleben eigener Kompetenz.",
+    "report": "UBB"
+  },
+  {
+    "sort": 13,
+    "plot": "A4d",
+    "header1": "A4.3 Der Unterricht ermöglicht das Erleben eigener Kompetenz.",
+    "report": "UBB"
+  },
+  {
+    "sort": 14,
+    "plot": "A6",
+    "header1": "A6  Nachhaltiges Lernen",
+    "report": "UBB"
+  },
+  {
+    "sort": 15,
+    "plot": "A6a",
+    "header1": "Lernstrategien",
+    "report": "UBB"
+  },
+  {
+    "sort": 16,
+    "plot": "A6b",
+    "header1": "A6.1 Im Unterricht wird Wissen vernetzt. ",
+    "report": "UBB"
+  },
+  {
+    "sort": 17,
+    "plot": "A6c",
+    "header1": "A6.2 Der Unterricht bietet herausfordernde Aufgaben.",
+    "report": "UBB"
+  },
+  {
+    "sort": 18,
+    "plot": "A6d",
+    "header1": "A6.4 Der Unterricht enthält Übungsphasen und sichert die Ergebnisse.",
+    "report": "UBB"
+  },
+  {
+    "sort": 19,
+    "plot": "W14a",
+    "header1": "W1 :  Das pädagogische Handeln im Unterricht berücksichtigt die Heterogenität der Schülerinnen und Schüler (W1.4).",
+    "report": "UBB"
+  },
+  {
+    "sort": 20,
+    "plot": "A3a",
+    "header1": "A3.1 Die Lehr- und Lernmethoden wechseln angemessen ab. Unterrichtsmethoden",
+    "report": "UBB"
+  },
+  {
+    "sort": 21,
+    "plot": "A3b",
+    "header1": "A3.1 Die Lehr- und Lernmethoden wechseln angemessen ab: Sozialformen",
+    "report": "UBB"
+  },
+  {
+    "sort": 22,
+    "plot": "A3c",
+    "header1": "A3.1 Die Lehr- und Lernmethoden wechseln angemessen ab:  Aufgabentypen",
+    "report": "UBB"
+  },
+  {
+    "sort": 23,
+    "plot": "A3d",
+    "header1": "A3.1 Die Lehr- und Lernmethoden wechseln angemessen ab: Rhythmisierende Elemente",
+    "report": "UBB"
+  },
+  {
+    "sort": 24,
+    "plot": "W2a",
+    "header1": "W2 Digitalisierung: Nutzung",
+    "report": "UBB"
+  },
+  {
+    "sort": 25,
+    "plot": "W2b",
+    "header1": "W2 Schülerinnen und Schüler nutzen digitale Medien zum …",
+    "report": "UBB"
+  },
+  {
+    "sort": 26,
+    "plot": "W2c",
+    "header1": "W2 Geräte",
+    "report": "UBB"
+  },
+  {
+    "sort": 27,
+    "plot": "W24a",
+    "header1": "W2.4 Zur Gestaltung eines kompetenzorientierten Unterrichts werden digitale Medien eingebunden.",
+    "report": "UBB"
+  },
+  {
+    "sort": 28,
+    "plot": "W25a",
+    "header1": "W2.5 Digitale Medien unterstützen die individuelle Förderung und Selbststeuerung der Schülerinnen und Schüler.",
+    "report": "UBB"
+  },
+  {
+    "sort": 29,
+    "plot": "W26a",
+    "header1": "W2.6 Die Schule fördert die selbstbestimmte Teilhabe der Schülerinnen und Schüler an der digitalen Gesellschaft.",
+    "report": "UBB"
+  }
+]

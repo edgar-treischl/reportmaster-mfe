@@ -1,0 +1,479 @@
+[
+  {
+    "set": "set01",
+    "code": "1",
+    "labels": "stimmt gar nicht",
+    "sort": "1",
+    "colors": "#7b3294",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set01",
+    "code": "2",
+    "labels": "stimmt eher nicht",
+    "sort": "2",
+    "colors": "#c2a5cf",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set01",
+    "code": "3",
+    "labels": "stimmt zum Teil",
+    "sort": "3",
+    "colors": "#f7f7f7",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set01",
+    "code": "4",
+    "labels": "stimmt eher",
+    "sort": "4",
+    "colors": "#a6dba0",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set01",
+    "code": "5",
+    "labels": "stimmt ganz genau",
+    "sort": "5",
+    "colors": "#008837",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set01",
+    "code": "6",
+    "labels": "weiß nicht",
+    "sort": "6",
+    "colors": "#d0cece",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set03",
+    "code": "1",
+    "labels": "gar nicht zufrieden",
+    "sort": "1",
+    "colors": "#7b3294",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set03",
+    "code": "2",
+    "labels": "eher nicht zufrieden",
+    "sort": "2",
+    "colors": "#c2a5cf",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set03",
+    "code": "3",
+    "labels": "eher zufrieden",
+    "sort": "3",
+    "colors": "#a6dba0",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set03",
+    "code": "4",
+    "labels": "sehr zufrieden",
+    "sort": "4",
+    "colors": "#008837",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set03",
+    "code": "5",
+    "labels": "weiß nicht",
+    "sort": "5",
+    "colors": "#d0cece",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set04",
+    "code": "0",
+    "labels": "nicht erfüllt",
+    "sort": "1",
+    "colors": "#ca0020",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set04",
+    "code": "1",
+    "labels": "eher nicht erfüllt",
+    "sort": "2",
+    "colors": "#f4a582",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set04",
+    "code": "2",
+    "labels": "teils, teils",
+    "sort": "3",
+    "colors": "#f5f5f5",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set04",
+    "code": "3",
+    "labels": "eher erfüllt",
+    "sort": "4",
+    "colors": "#92c5de",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set04",
+    "code": "4",
+    "labels": "voll und ganz erfüllt",
+    "sort": "5",
+    "colors": "#0571b0",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set05",
+    "code": "1",
+    "labels": "schwach ausgeprägt",
+    "sort": "1",
+    "colors": "#ef8a62",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set05",
+    "code": "2",
+    "labels": "teils, teils",
+    "sort": "2",
+    "colors": "#f5f5f5",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set05",
+    "code": "3",
+    "labels": "stark ausgeprägt",
+    "sort": "3",
+    "colors": "#67a9cf",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set05",
+    "code": "0",
+    "labels": "nicht beobachtbar",
+    "sort": "4",
+    "colors": "#bebebe",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set06",
+    "code": "1",
+    "labels": "20 Minuten",
+    "sort": "1",
+    "colors": "NA",
+    "text_color": "NA",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set06",
+    "code": "2",
+    "labels": "45 Minuten",
+    "sort": "2",
+    "colors": "NA",
+    "text_color": "NA",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set07",
+    "code": "1",
+    "labels": "Stundenanfang",
+    "sort": "1",
+    "colors": "#1f78b4",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set07",
+    "code": "2",
+    "labels": "Stundenmitte",
+    "sort": "2",
+    "colors": "#a6cee3",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set07",
+    "code": "3",
+    "labels": "Stundenende",
+    "sort": "3",
+    "colors": "#b2df8a",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set08",
+    "code": "Y",
+    "labels": "Ja",
+    "sort": "1",
+    "colors": "#b2df8a",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set09",
+    "code": "1",
+    "labels": "ein Gerät",
+    "sort": "1",
+    "colors": "#1f78b4",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set09",
+    "code": "2",
+    "labels": "mehrere Geräte",
+    "sort": "2",
+    "colors": "#a6cee3",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set09",
+    "code": "3",
+    "labels": "Geräte für alle SuS",
+    "sort": "3",
+    "colors": "#b2df8a",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set10",
+    "code": "1",
+    "labels": "keine Aufgaben",
+    "sort": "1",
+    "colors": "#1f78b4",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set10",
+    "code": "2",
+    "labels": "einander ähnlich",
+    "sort": "2",
+    "colors": "#a6cee3",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set10",
+    "code": "3",
+    "labels": "variationsreich",
+    "sort": "3",
+    "colors": "#b2df8a",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set11",
+    "code": "1",
+    "labels": "...täglich oder mehrmals täglich",
+    "sort": "1",
+    "colors": "#006d2c",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set11",
+    "code": "2",
+    "labels": "...mehrmals pro Woche",
+    "sort": "2",
+    "colors": "#2ca25f",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set11",
+    "code": "3",
+    "labels": "...einmal pro Woche",
+    "sort": "3",
+    "colors": "#66c2a4",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set11",
+    "code": "4",
+    "labels": "...mehrmals pro Monat",
+    "sort": "4",
+    "colors": "#99d8c9",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set11",
+    "code": "5",
+    "labels": "...einmal pro Monat oder seltener",
+    "sort": "5",
+    "colors": "#ccece6",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set11",
+    "code": "6",
+    "labels": "...nie",
+    "sort": "6",
+    "colors": "#edf8fb",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set11",
+    "code": "7",
+    "labels": "weiß nicht",
+    "sort": "7",
+    "colors": "#d0cece",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set12",
+    "code": "1",
+    "labels": "in fast jeder Stunde",
+    "sort": "1",
+    "colors": "#238b45",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set12",
+    "code": "2",
+    "labels": "in den meisten Stunden",
+    "sort": "2",
+    "colors": "#66c2a4",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set12",
+    "code": "3",
+    "labels": "in einigen Stunden",
+    "sort": "3",
+    "colors": "#b2e2e2",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set12",
+    "code": "4",
+    "labels": "fast nie oder nie",
+    "sort": "4",
+    "colors": "#edf8fb",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set12",
+    "code": "5",
+    "labels": "weiß nicht",
+    "sort": "5",
+    "colors": "#d0cece",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set14",
+    "code": "2",
+    "labels": "Nein",
+    "sort": "1",
+    "colors": "#1f78b4",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set14",
+    "code": "3",
+    "labels": "Ja, nur durch LK",
+    "sort": "2",
+    "colors": "#a6cee3",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set14",
+    "code": "4",
+    "labels": "Ja, nur durch SuS",
+    "sort": "3",
+    "colors": "#b2df8a",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set14",
+    "code": "5",
+    "labels": "Ja, durch SuS und LK",
+    "sort": "4",
+    "colors": "#33a02c",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set15",
+    "code": "2",
+    "labels": "Nein",
+    "sort": "2",
+    "colors": "#1f78b4",
+    "text_color": "white",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set15",
+    "code": "1",
+    "labels": "Ja",
+    "sort": "1",
+    "colors": "#b2df8a",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set16",
+    "code": "1",
+    "labels": "schwach ausgeprägt",
+    "sort": "1",
+    "colors": "#ef8a62",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set16",
+    "code": "2",
+    "labels": "teils, teils",
+    "sort": "2",
+    "colors": "#f7f7f7",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  },
+  {
+    "set": "set16",
+    "code": "3",
+    "labels": "stark ausgeprägt",
+    "sort": "3",
+    "colors": "#67a9cf",
+    "text_color": "black",
+    "timestamp": "2025-01-15 10:46:53"
+  }
+]

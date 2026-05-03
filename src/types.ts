@@ -13,11 +13,36 @@ export interface FormData {
 export interface SchoolData {
   name: string;
   plots: PlotMeta[];
+  plotData?: Map<string, PlotDataWithMeta>;
 }
 
 export interface PlotMeta {
   id: string;
   label: string;
+}
+
+export interface PlotData {
+  id: string;
+  label: string;
+  groups: import('./iqb').ChartGroup[];
+}
+
+export interface ExampleDataItem {
+  vars: string;
+  vals: string;
+  label_short: string;
+  anz: number;
+  p: number;
+  label_n: string;
+  set: string;
+  plot_name: string;
+}
+
+export interface PlotDataWithMeta {
+  groups: import('./iqb').ChartGroup[];
+  header1: string;
+  header2: string;
+  set: string;
 }
 
 export interface AppState {
