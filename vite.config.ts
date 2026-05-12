@@ -32,6 +32,7 @@ export default defineConfig(({ mode }) => ({
   },
 
   build: {
+    sourcemap: 'hidden',
     target: 'esnext',
     cssCodeSplit: false,
     minify: false,
